@@ -1,4 +1,4 @@
-# Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn
+# EX8:Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn
 
 ## AIM:
 To write a program to implement the Decision Tree Classifier Model for Predicting Employee Churn.
@@ -8,29 +8,11 @@ To write a program to implement the Decision Tree Classifier Model for Predictin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-```
-STEP 1: Start
-
-STEP 2: Load the employee churn dataset into a Pandas DataFrame and inspect the first few rows using data.head().
-
-STEP 3: Check for missing values in the dataset using data.isnull().sum() and view the structure using data.info().
-
-STEP 4: Preprocess the categorical data. Use LabelEncoder to convert the "salary" column into numerical values.
-
-STEP 5: Define the feature matrix (X) by selecting relevant columns (e.g., satisfaction_level, last_evaluation, etc.) and set the target variable (Y) as the "left" column.
-
-STEP 6: Split the dataset into training and testing sets using train_test_split() with a test size of 20%.
-
-STEP 7: Initialize the Decision Tree Classifier with the entropy criterion and fit the model to the training data (x_train, y_train).
-
-STEP 8: Predict the target values on the testing set (x_test) using dt.predict().
-
-STEP 9: Calculate the accuracy of the model using metrics.accuracy_score() by comparing predicted values with actual test values.
-
-STEP 10: Use the trained model to predict employee churn for a new input using dt.predict([[...]]).
-
-STEP 11: End
-```
+1. Import the required libraries.
+2. Upload and read the dataset.
+3. Check for any null values using the isnull() function.
+4. From sklearn.tree import DecisionTreeClassifier and use criterion as entropy.
+5. Find the accuracy of the model and predict the required values by importing the required module from sklearn.
 ## Program:
 ```
 /*
@@ -79,10 +61,13 @@ dt.predict([[0.5,0.8,9,260,6,0,1,2]])
 ```
 
 ## Output:
-![369267409-9231c221-b787-409a-b110-1e7a98f943ce](https://github.com/user-attachments/assets/ce45a456-c8ec-4ac1-94ea-dc35cc313fd5)
-![369267493-5b9ae4b1-f5ed-4ea8-802e-8a536c39d06b](https://github.com/user-attachments/assets/6d258501-a4c8-491c-af01-be6016779cbe)
-![369267676-fa01c66a-64e2-47a4-830d-4dc144a82672](https://github.com/user-attachments/assets/7fe2c678-93d6-45cc-8ae5-db493d35f7ff)
-![369267745-44552d9d-d2d4-4ee0-a11d-6aba116ca385](https://github.com/user-attachments/assets/1b625d3a-a891-43c2-8b81-6673a7c6238c)
+![Screenshot 2024-09-20 103740](https://github.com/user-attachments/assets/9d88a883-db85-4036-b3f8-3f27ce8dab33)
+
+## Accuracy:
+![Screenshot 2024-09-20 103754](https://github.com/user-attachments/assets/cf464349-aa04-443d-a466-26e214d95951)
+
+## New predicted :
+![Screenshot 2024-09-20 103810](https://github.com/user-attachments/assets/ce36cfee-0ddf-4d82-be97-ad7028eccfb5)
 
 
 
