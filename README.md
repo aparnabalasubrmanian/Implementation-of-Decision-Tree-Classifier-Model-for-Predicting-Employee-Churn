@@ -8,11 +8,29 @@ To write a program to implement the Decision Tree Classifier Model for Predictin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Import the required libraries.
-2. Upload and read the dataset.
-3. Check for any null values using the isnull() function.
-4. From sklearn.tree import DecisionTreeClassifier and use criterion as entropy.
-5. Find the accuracy of the model and predict the required values by importing the required module from sklearn.
+```
+STEP 1: Start
+
+STEP 2: Load the employee churn dataset into a Pandas DataFrame and inspect the first few rows using data.head().
+
+STEP 3: Check for missing values in the dataset using data.isnull().sum() and view the structure using data.info().
+
+STEP 4: Preprocess the categorical data. Use LabelEncoder to convert the "salary" column into numerical values.
+
+STEP 5: Define the feature matrix (X) by selecting relevant columns (e.g., satisfaction_level, last_evaluation, etc.) and set the target variable (Y) as the "left" column.
+
+STEP 6: Split the dataset into training and testing sets using train_test_split() with a test size of 20%.
+
+STEP 7: Initialize the Decision Tree Classifier with the entropy criterion and fit the model to the training data (x_train, y_train).
+
+STEP 8: Predict the target values on the testing set (x_test) using dt.predict().
+
+STEP 9: Calculate the accuracy of the model using metrics.accuracy_score() by comparing predicted values with actual test values.
+
+STEP 10: Use the trained model to predict employee churn for a new input using dt.predict([[...]]).
+
+STEP 11: End
+```
 ## Program:
 ```
 /*
